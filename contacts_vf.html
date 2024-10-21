@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_vf.css">
+    <title>Nos contacts</title>
+</head>
+<body>
+  <header>
+
+    <nav class="menu">
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="entreprise.html">Entreprise</a>
+        </li>
+        <li>
+          <a href="realisations.html">Réalisations</a>
+        </li>
+        <li>
+          <a href="contacts.html">Contacts</a>
+        </li>
+      </ul>
+    </nav>
+
+    <form class="search-form">
+      <input type="text" placeholder ="Search"> 
+    </form>
+
+  </header>
+
+  <main class="main-container">
+
+    <section class="contact-form">
+      <h1>Contactez-nous</h1>
+      <form>
+          <label for="civility">Civilité:</label>
+          <select id="civility" class="select-style">
+              <option value="Monsieur">Monsieur</option>
+              <option value="Madame">Madame</option>
+              <option value="Other">Autre</option>
+          </select>
+
+          <label for="name">Nom:</label>
+          <input type="text" id="name" class="input-style" placeholder="Votre nom">
+
+          <label for="surname">Prénom:</label>
+          <input type="text" id="surname" class="input-style" placeholder="Votre prénom">
+
+          <label for="address">Adresse:</label>
+          <input type="text" id="address" class="input-style adresse-input" placeholder="Votre adresse">
+
+          <div class="checkbox-container">
+              <input type="checkbox" id="policy" required>
+              <label for="policy">J'accepte la politique de confidentialité de l'entreprise.</label>
+          </div>
+
+          <button type="submit" class="validate-button">Valider</button>
+      </form>
+    </section>
+  </main>
+</body>
+<footer>
+  2024. Bloom Petals. Tous les droits réservés
+</footer>

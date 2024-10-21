@@ -1,0 +1,368 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(237, 231, 231);
+  color: #343a40;
+  font-family: "Roboto";
+  font-size: 18px;
+  line-height: 1.5;
+}
+header {
+  width: 100%;
+  background-color: hsla(236, 90%, 27%, 0.817);
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 10px;
+}
+.menu {
+  display: inline-block;
+}
+ ul {
+  list-style-type: none;
+  padding: 20px;
+  text-align: left;
+  
+}
+li {
+  display: inline-block;
+  margin-inline: 10px;
+}
+li a {
+  color: #fff;
+  text-decoration: none;
+}
+li a:hover, li a:focus {
+  text-decoration: underline; 
+}
+.search-form {
+  display: inline-block;
+}
+.search-form input {
+  padding: 10px;
+  width: 350px;
+  border-radius: 10px;
+  margin-right: 20px;
+}
+.main-container {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 80px;
+}
+
+.text-section, .mosaic {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 60px;
+  margin: 40px auto 20px auto;
+  text-align: left;
+  max-width: 1200px;
+  line-height: 1.8;
+  color:#343a40;
+  border-bottom: 1px solid #e0e0e0;
+}
+.logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.logo h1 {
+  font-family: "Pacifico";
+  color: blue;
+  font-size: 60px;
+}
+.title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #3a3a3a; 
+  text-align: left;
+  text-decoration: underline;
+  margin-bottom: 15px;
+}
+.text-description {
+  font-size: 1.25rem;
+  color: #555;
+  text-align:left;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.images-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px;
+  margin: 0px 25px;
+  border-bottom: 1px solid gray;
+}
+.image {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow:hidden;
+}
+.image img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  border-bottom: 1px solid gray;
+}
+.tick-services-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+.tick-services-list li {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 20px;
+}
+.tick-services-list li::before {
+  content: "\2714";
+  position: absolute;
+  left:0;
+  color: blue;
+  font-size: 20px;
+}
+.services a {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 16px;
+}
+.services a:hover {
+  color: darkblue;
+  text-decoration: none;
+}
+footer {
+  background-color: hsla(236, 90%, 27%, 0.817);
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+  border-top: 2px solid rgba(255, 255, 255, 0.2);
+}
+.team {
+  padding: 20px;
+  text-align: center;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+.team h2 {
+  margin-bottom: 20px;
+}
+
+.team-members {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.team-member {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  background: #f9f9f9;
+  transition: transform 0.2s;
+}
+
+.team-member img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.team-member h3 {
+  margin: 10px 0;
+}
+
+.team-member p {
+  margin: 5px 0;
+}
+
+.team-member:hover {
+  transform: scale(1.05);
+}
+.mosaic {
+  padding: 0 60px;
+  margin-top: 40px;
+}
+
+.mosaic h2 {
+  margin-bottom: 20px;
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Affiche cinq éléments par ligne */
+  gap: 15px;
+  padding-top: 20px;
+}
+
+.mosaic-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+  transition: transform 0.3;
+}
+.mosaic-item:hover img {
+  transform: scale(1.1);
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form label {
+  display: block;
+  margin: 10px 0 5px;
+  font-weight: bold;
+}
+
+.input-style {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+.adresse-input {
+  padding: 50px;
+}
+
+.select-style {
+  width: calc(100% - 22px);
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.checkbox-container {
+  margin: 15px 0;
+}
+
+button {
+  width: 30%;
+  padding: 20px;
+  background-color: rgba(21, 11, 217, 0.91);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: rgba(21, 11, 217, 0.7);
+}
+
+/* Media Query pour les écrans plus petits ou égaux à 460px */
+@media (max-width: 460px) {
+  .search-form input {
+    width: 100%; /* Passer search input en plein écran */
+    margin-right: 0; 
+  }
+
+  .menu, .search-form {
+    display: block; /* Rendre le search menu vertical */
+    text-align: center; /* Aligner centre */
+  }
+
+  .images-container {
+    flex-direction: column; /* Mettre les images verticalement */
+  }
+
+  .tick-services-list li {
+    width: 100%; /* Mettre la liste des services en plein écran */
+    padding-left: 0; 
+  }
+
+  .team-members {
+    grid-template-columns: 1fr; /* Mettre la présentation des membres d'équipe en vertical */
+  }
+
+  .mosaic-grid {
+    grid-template-columns: repeat(2, 1fr); /* Passer à deux images par lignes */
+  }
+
+  button {
+    width: 100%; /* Faire le button occuper 100% de l'écran */
+  }
+
+  .contact-form {
+    padding: 10px; /* Réduire padding dans la forme de contacts */
+  }
+}
+
+/* Media Query for screens smaller than or equal to 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column; /* Arranger les éléments verticalement */
+    align-items: flex-start; /* Align les éléments à gauche */
+  }
+
+  .menu, .search-form {
+    margin-bottom: 10px; 
+  }
+
+  .images-container {
+    flex-direction: column; /* Arranger les images verticalement */
+  }
+
+  .tick-services-list li {
+    width: 48%; /* Ajuster la largeur pour y mettre deux colonnes */
+  }
+
+  .team-members {
+    grid-template-columns: repeat(2, 1fr); /* Faire apparaître deux images par colonne */
+  }
+
+  .mosaic-grid {
+    grid-template-columns: repeat(2, 1fr); /* Faire apparaître deux images par colonne */
+  }
+
+  .logo h1 {
+    font-size: 40px; /* Ajuster le logo du site */
+  }
+
+  .title {
+    font-size: 1.4rem; /* Ajuster la taille du titre */
+  }
+
+  .text-description {
+    font-size: 1rem; /* Ajuster la taille du texte déscriptif */
+  }
+
+  button {
+    width: 100%; /* Faire la bouton occuper la largeur de l'écran */
+  }
+
+  .contact-form {
+    padding: 15px;
+  }
+}
